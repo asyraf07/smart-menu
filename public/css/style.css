@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+body {
+  background-color: rgb(87, 79, 63);
+  font-family: Roboto, sans-serif;
+  color: white;
+}
+
+* {
+  /* border: 1px solid red; */
+}
+
+nav {
+  background-color: rgb(255, 198, 77);
+  padding: 1% 4%;
+  color: white;
+  height: 10vh;
+}
+img {
+  width: 100%;
+}
+
+.bg {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
+
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-pagination {
+  color: white;
+}
+
+.swiper-container {
+  height: 90vh;
+}
+
+/* List */
+
+.menu-container {
+  /* width: 100%; */
+  /* margin: 10px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+  width: 74vw;
+}
+
+.menu-section {
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+.menu-title {
+  font-size: 2rem;
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}
+
+.menu-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.menu-card {
+  height: 400px;
+  max-width: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  margin-top: 1%;
+}
+
+.sold {
+  color: red;
+  position: absolute;
+  letter-spacing: 1.2rem;
+  font-weight: bold;
+  font-size: 2rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu-card .gambar {
+  height: 250px;
+  width: 250px;
+  border: 10px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.menu-card .gambar img {
+  /* width: auto; */
+  height: 100%;
+}
+
+.menu-card .nama {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+.menu-card .deskripsi {
+  font-size: 1.3rem;
+}
+.menu-card .harga {
+  font-size: 1.3rem;
+}
+
+.pesanan-container {
+  background-color: white;
+  width: 24vw;
+  height: 89vh;
+  position: fixed;
+  right: 0%;
+  top: 11vh;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  overflow: hidden;
+}
+
+.pesanan-header {
+  background-color: rgb(255, 198, 77);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+  font-weight: bold;
+}
+
+.pesanan-detail-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* height: 74vh; */
+  padding: 10px;
+}
+
+.pesanan-detail {
+  margin-bottom: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#pesanan-nama {
+  width: 9vw;
+}
+
+#pesanan-jumlah {
+  width: 5vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#pesanan-jumlah div {
+  flex-grow: 1;
+  text-align: center;
+  border-radius: 50%;
+}
+
+#pesanan-jumlah .kurang {
+  background-color: rgb(255, 100, 100);
+  cursor: pointer;
+}
+
+#pesanan-jumlah .tambah {
+  background-color: rgb(100, 255, 100);
+  cursor: pointer;
+}
+
+#pesanan-harga {
+  width: 9vw;
+  text-align: right;
+}
+
+.pesanan-total {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  bottom: 6vh;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.pesanan-tombol {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  bottom: 1vh;
+}
+
+#thanks {
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#thanks h1 {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1vh;
+}
